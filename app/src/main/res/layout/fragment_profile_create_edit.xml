@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_profile_create_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/image_FL_container"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity='center_horizontal'
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/login_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_FL_container"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/login_hint_TV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ET"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/password_hint_TV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_ET"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/name_hint_TV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/last_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_ET"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/last_name_hint_TV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/age_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_name_ET"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/age_hint_TV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/about_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_ET"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:hint="@string/about_hint_TV"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancel_Btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_ET"
+        android:background="@color/colorPrimary"
+        android:text="@string/cancel_Btn" />
+
+    <Button
+        android:id="@+id/save_Btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_ET"
+        android:layout_toRightOf="@id/cancel_Btn"
+        android:background="@color/colorPrimary"
+        android:text="@string/save_Btn" />
+</RelativeLayout>

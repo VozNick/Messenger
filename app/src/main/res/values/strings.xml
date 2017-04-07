@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="login_hint_ET">Enter loginM …</string>
+    <string name="password_hint_ET">Enter password …</string>
+    <string name="message_input_hint_ET">Type a message …</string>
+
+    <string name="login_hint_TV">Login</string>
+    <string name="password_hint_TV">Password</string>
+    <string name="name_hint_TV">Name</string>
+    <string name="last_name_hint_TV">Last Name</string>
+    <string name="age_hint_TV">Age</string>
+    <string name="about_hint_TV">About</string>
+
+    <string name="login_Btn">Login</string>
+    <string name="registration_Btn">Registration</string>
+    <string name="send_Btn">Send</string>
+    <string name="edit_Btn">Edit</string>
+    <string name="cancel_Btn">Cancel</string>
+    <string name="save_Btn">Save</string>
+
+    <string name="image_IV">Image</string>
+    <string name="message_TV">Message</string>
+    <string name="profile_item">Profile</string>
+</resources>
